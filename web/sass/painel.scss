@@ -1,0 +1,7 @@
+@import "./partials/base";
+
+body {
+    min-width: 100vh;
+    min-height: 100vh;
+    background-color: var(--bg-base-opacity-sm);
+}

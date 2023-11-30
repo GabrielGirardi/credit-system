@@ -3,9 +3,9 @@
 
     if(isset($_POST['email']) || isset($_POST['senha'])) {
         if(strlen($_POST['email']) == 0) {
-            echo "Preencha seu e-mail";
+            echo '<div class="error"></div>';
         } else if(strlen($_POST['senha']) == 0) {
-            echo "Preencha a sua senha";
+            echo '<div class="error"></div>';
         } else {
             $email = $mysqli->real_escape_string($_POST['email']);
             $senha = $mysqli->real_escape_string($_POST['senha']);
@@ -28,7 +28,7 @@
                 header("Location: ./pages/painel.php");
 
             } else {
-                echo "Falha ao fazer login, verifique os dados forncecidos";
+                echo '<div class="error"></div>';
             }
         }
     }
@@ -39,23 +39,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./web/js/login-area.js"></script>
     <link rel="stylesheet" href="./web/css/base.css"/>
+    <link rel="stylesheet" href="./web/css/login-area.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Sistema de crediário</title>
 </head>
-<body>
-    <form action="" method="post">
-        <h1>Acesse sua conta</h1>
-        <p>
-            <label>E-mail:</label>
-            <input type="text" name="email">
-        </p>
-        <p>
-            <label>Senha:</label>
-            <input type="password" name="senha">
-        </p>
-        <p>
-            <button type="submit">Entrar</button>
-        </p>
+<body class="flex center justify-center">
+    <form class="login register flex center justify-center" action="" method="post">
+        <section class="login-area flex center justify-center column">
+            <h1>Acesse sua conta</h1>
+            <p class="login-box email">
+                <label>E-mail:</label>
+                <input type="text" name="email">
+            </p>
+            <p class="login-box password">
+                <label>Senha:</label>
+                <input type="password" name="senha">
+            </p>
+            <p class="login-box button-login">
+                <button type="submit">Entrar</button>
+            </p>
+            <span class="sign-up">Ainda não tem uma conta? Crie uma agora</span>
+        </section>
     </form>
 </body>
 </html>

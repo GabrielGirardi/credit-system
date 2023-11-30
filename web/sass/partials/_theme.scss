@@ -1,0 +1,52 @@
+:root {
+    // Default
+    --color-red: rgb(174, 17, 19);
+    --color-black: rgb(0, 0, 0);
+    --color-white: rgb(255, 255, 255);
+
+    // theme 
+    --bg-base: rgb(21, 21, 22);
+    --bg-secondary: rgba(255,255,255,.1);
+    --bg-input: rgb(34, 34, 39);
+
+    --fill-icon: var(--color-white);
+    --fill-black: var(--color-black);
+
+    --text-base: rgb(201, 200, 203);
+    --text-secondary: rgb(103, 103, 105);
+    --text-white: var(--color-white);
+    --text-mark: rgb(208, 194, 47);
+
+    --border-base: rgb(255, 255, 255);
+    --border-secondary: rgb(0, 0, 0);
+    --border-input: rgb(34, 34, 39);
+
+    --nav-base: rgb(26, 25, 29);
+    --nav-active: rgb(34, 35, 39);
+    --nav-icon: rgb(203, 203, 205);
+
+    --shadow-base: #0000001a;
+    --button-base: rgb(31, 30, 34);
+
+    // actions
+    --success: rgb(77, 170, 39);
+    --error: rgb(167, 16, 16);
+    --warning: rgb(208, 194, 47);
+    --disabled: rgb(91, 91, 90);
+
+    // base transparency
+    --bg-base-opacity-sm: rgba(21, 21, 21, .1);
+    --bg-base-opacity-md: rgba(21, 21, 21, .4);
+    --bg-base-opacity-lg: rgba(21, 21, 21, .8);
+
+    --border-base-opacity-sm: rgba(255, 255, 255, .1);
+    --border-base-opacity-md: rgba(255, 255, 255, .4);
+    --border-base-opacity-lg: rgba(255, 255, 255, .8);
+    --border-secondary-opacity-sm: rgba(0, 0, 0, .1);
+    --border-secondary-opacity-md: rgba(0, 0, 0, .4);
+    --border-secondary-opacity-lg: rgba(0, 0, 0, .8);
+
+    --shadow-sm: rgba(0, 0, 0, .1);
+    --shadow-md: rgba(0, 0, 0, .4);
+    --shadow-lg: rgba(11, 3, 3, 0.8);
+}
