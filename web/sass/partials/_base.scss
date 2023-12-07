@@ -1,4 +1,3 @@
-@import url('https://cdn.fontshare.com/wf/QT4CYRMMCSPIHTO635GDUTTAEHGLRQ54/MYVNSUIXZDTIB4UZKPO2L6VG72I633DS/6KQY4JB7EWYXSXKZEY5XPSJRA3OVSO2C.woff2');
 @import "./theme";
 @import "./props";
 
@@ -7,4 +6,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }

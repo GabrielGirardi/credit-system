@@ -1,13 +1,17 @@
 @import "./partials/base";
 
-body {
-    min-width: 100vh;
-    min-height: 100vh;
+body.login {
+    min-width: 100vh !important;
+    min-height: 100vh !important;
     background-color: var(--bg-base);
     font-family: 'Pilcrow Rounded', sans-serif;
 
+    @media (max-width: 768px) {
+        min-width: 100% !important;
+    }
+
     .login.register {
-        width: 20%;
+        width: 360px;
         height: 330px;
         background-color: var(--bg-secondary);
         border-radius: 8px;
