@@ -1,0 +1,6 @@
+"id","nome","data_nascimento","email"
+"11","Piter Parker","1991-01-01","piter.parker@gmail.com"
+"13","Maria Eduarda","1998-11-11","maria.eduarda@gmail.com"
+"14","Jacinto Augustu","1999-01-01","jacinto@gmail.com"
+"id","email","senha","username"
+"1","admin@gmail.com","admin","admin"
