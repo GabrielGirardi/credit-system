@@ -42,18 +42,18 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./web/js/login-area.js"></script>
-    <link rel="stylesheet" href="./web/css/base.css"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=pilcrow-rounded@1,700,400,500,900,600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./web/css/login-area.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="./assets/base/logo.avif"/>
     <title>Sistema de crediário</title>
 </head>
-<body class="flex center justify-center">
+<body class="login flex center justify-center">
     <form class="login register flex center justify-center" action="" method="post">
         <section class="login-area flex center justify-center column">
             <h1>Acesse sua conta</h1>
             <p class="login-box email">
                 <label>E-mail:</label>
-                <input type="text" name="email">
+                <input type="text" name="email" placeholder="usuario@gmail.com">
             </p>
             <p class="login-box password">
                 <label>Senha:</label>
@@ -62,7 +62,9 @@
             <p class="login-box button-login">
                 <button type="submit">Entrar</button>
             </p>
-            <span class="sign-up">Ainda não tem uma conta? Crie uma agora</span>
+            <span class="sign-up">
+                Ainda não tem uma conta? Crie uma agora
+            </span>
         </section>
     </form>
 </body>

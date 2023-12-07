@@ -18,6 +18,11 @@ $(function() {
             icon: "error",
             title: "Verifique as informações fornecidas"
         })
-    }    
+    }
 });
 
+setTimeout(function() {
+    $('.sign-up').on('click', function() {
+        
+    });
+}, 400);
